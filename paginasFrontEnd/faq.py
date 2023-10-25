@@ -1,5 +1,8 @@
 import streamlit as st
-from st_pages import Page, Section, add_page_title, show_pages, hide_pages
+from init import init
+init()
+from showPages import atualizarEstado
+atualizarEstado(st.session_state["estado do usuario"])
 
 
 import showPages
